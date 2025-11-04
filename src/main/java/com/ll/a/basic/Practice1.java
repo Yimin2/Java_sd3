@@ -1,6 +1,6 @@
 package com.ll.a.basic;
 
-public class Practice {
+public class Practice1 {
     public static void main(String[] args) {
         System.out.println("===========짝수 홀수 판단===========");
         int num = 17;
