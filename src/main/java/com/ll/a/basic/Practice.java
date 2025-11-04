@@ -58,6 +58,13 @@ public class Practice {
                 System.out.println("삼각형 no");
             }
         }
+
+        if((a +b > c) && (a+c>b) && (b+c>a)) {
+            System.out.println("삼각형 ok");
+        } else {
+            System.out.println("삼각형 no");
+        }
+
         System.out.println("===========계절 판별===========");
         int month = 7;
         switch (month) {
@@ -111,7 +118,7 @@ public class Practice {
         } else {
             judgement = "비만";
         }
-        System.out.printf("%f는 %s", pig, judgement);
+        System.out.printf("%f는 %s\n", pig, judgement);
 
         System.out.println("===========최댓값 구하기===========");
         int num1 = 10, num2 = 25, num3 = 17;
@@ -133,7 +140,7 @@ public class Practice {
 
         System.out.println("===========시험 합격 여부===========");
         int math = 39, english = 70, science = 95;
-        int avg = (math + english + science)/3;
+        double avg = (math + english + science)/3.0;
         int cutAvg = 60;
         int cutNum = 40;
         int m = 0, e = 0, s = 0;
@@ -173,25 +180,20 @@ public class Practice {
         System.out.println("===========할인율 계산===========");
         int price = 120000;
         boolean isMember = true;
-        double sale = 1;
-        int intSale = 0;
-        double result  = 0;
-        int intResult = 0;
+        int sale = 1;
+        int result  = 0;
 
         if (price >= 100000) {
             sale = 10;
         } else if (price >= 50000) {
             sale = 5;
         }
-        result = price - price * (sale/100);
         if(isMember) {
             sale += 5;
-            result = price - price * (sale/100);
         }
-        intSale = (int) sale;
-        intResult = (int) result;
+        result = price - price * sale / 100;
         System.out.println(price);
-        System.out.println(intSale);
-        System.out.println(intResult);
+        System.out.println(sale);
+        System.out.println(result);
     }
 }
