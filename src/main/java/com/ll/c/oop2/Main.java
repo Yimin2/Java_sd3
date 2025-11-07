@@ -18,5 +18,8 @@ public class Main {
 
         System.out.println(rectangle.getHeight());
 
+        User user = new User("홍길동",30);
+        user.setUsername("김길동");
+        System.out.println(user.getUsername());
     }
 }
