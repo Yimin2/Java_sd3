@@ -5,7 +5,7 @@ import lombok.NoArgsConstructor;
 
 public class ShapeMain {
     public static void main(String[] args) {
-        Circle c = new Circle("red", 10);
+        Circle4 c = new Circle4("red", 10);
         Rectangle r = new Rectangle("blue", 10, 10);
 
         System.out.println(c.getArea());
