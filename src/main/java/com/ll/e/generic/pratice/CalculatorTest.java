@@ -1,26 +1,20 @@
 package com.ll.e.generic.pratice;
 
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 
 @AllArgsConstructor
+@Getter
 class Calculator<T> {
-    private T value1;
-    private T value2;
-
-    T getFirst() {
-        return value1;
-    }
-
-    T getSecond() {
-        return value2;
-    }
+    private T first;
+    private T second;
 
     void printBoth() {
-        System.out.println("Calculator{" + "value1=" + value1 + ", value2=" + value2 + '}');
+        System.out.println(first  +" "+ second);
     }
 
     public boolean areEqual() {
-        if (value1.equals(value2)) {
+        if (first.equals(second)) {
             return true;
         }
         return  false;
