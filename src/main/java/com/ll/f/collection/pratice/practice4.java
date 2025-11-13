@@ -29,7 +29,7 @@ public class practice4 {
         System.out.println("출력: " + countFrequency(list4));
     }
 
-    public static ArrayList<ArrayList<Integer>> countFrequency(ArrayList<Integer> list) {
+    public static ArrayList<ArrayList<Integer>> countFrequency2(ArrayList<Integer> list) {
         ArrayList<ArrayList<Integer>> newList = new ArrayList<>();
         for (int i = 0; i < list.size(); i++) {
             int count = 0;
@@ -45,5 +45,27 @@ public class practice4 {
             }
         }
         return newList;
+    }
+
+    public static ArrayList<ArrayList<Integer>> countFrequency(ArrayList<Integer> list) {
+        ArrayList<ArrayList<Integer>> result = new ArrayList<>();
+        for (int num : list) {
+            boolean found = false;
+            for (ArrayList<Integer> pair : result) {
+                if(pair.get(0) == num) {
+                    pair.set(1, pair.get(1) +1);
+                    found = true;
+                    break;
+                }
+            }
+
+            if (!found) {
+                ArrayList<Integer> newPair = new ArrayList<>();
+                newPair.add(num);
+                newPair.add(1);
+                result.add(newPair);
+            }
+        }
+        return result;
     }
 }
