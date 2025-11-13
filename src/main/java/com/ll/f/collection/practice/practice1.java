@@ -1,6 +1,4 @@
-package com.ll.f.collection.pratice;
-
-import com.ll.d.inheritance.pratice.person.Person;
+package com.ll.f.collection.practice;
 
 import java.util.ArrayList;
 import java.util.Arrays;

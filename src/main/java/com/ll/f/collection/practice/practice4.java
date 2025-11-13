@@ -1,6 +1,4 @@
-package com.ll.f.collection.pratice;
-
-import com.ll.c.oop2.Person;
+package com.ll.f.collection.practice;
 
 import java.util.ArrayList;
 import java.util.Arrays;

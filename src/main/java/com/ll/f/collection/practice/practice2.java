@@ -1,4 +1,4 @@
-package com.ll.f.collection.pratice;
+package com.ll.f.collection.practice;
 
 import java.util.ArrayList;
 import java.util.Arrays;
